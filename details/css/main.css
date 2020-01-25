@@ -1,0 +1,393 @@
+/* 整体 */
+.container {
+    width: 100%;
+    /* border: 1px solid #000; */
+}
+/* 导航栏 */
+header .nav {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(51, 51, 51);
+    line-height: 50px;
+    color:rgb(204, 204, 204);
+    font-size: 12px; 
+    position: relative;
+}
+/* 导航栏左侧滚动 */
+header .nav .navleft {
+    margin-left: 73px;
+    position: relative;
+    overflow: hidden;
+    width: 220px;
+    height: 50px;
+    /* border: 1px solid red; */
+}
+header .nav .navleft .contro {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    /* background-color: green; */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+header .nav .navleft .contro .controls:hover {
+    color: white;
+}
+/* 导航栏右侧文字 */
+header .nav ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 135px;  
+}
+header .nav li {
+    float:right;    
+}
+header .nav a {
+    font-size: 12px;
+    color:rgb(204, 204, 204);  
+}
+header .nav a:hover {
+    color: white;
+}
+/* 导航栏手机 */
+header .nav .phone {
+    position: absolute;
+    right: 0;
+    top: 0;
+    float: right;
+    margin-right: 87px;
+}
+/* 导航栏二维码 */
+header.nav .mask {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    z-index: 1;
+} 
+.mask::after {
+    content: '';
+    width: 200px;
+    height: 200px;
+    display: block;
+    position: absolute;
+    top: -250px;
+    right: 92px;
+    transition: all 1s;
+}
+.mask:hover::after {
+    background-image: url('./imgs/二维码.jpg');
+    top: 50px;
+}
+/* 轮播图 */
+/* 轮播图上类别 */
+.banner .bannerTop {
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid #000; */
+    line-height: 100px;
+}
+/* logo */
+.banner .bannerTop .logo {
+    width: 205px;
+    height: 100%;
+    /* border: 1px solid #000; */
+    box-sizing: border-box;
+    float: left;
+}
+/* 图片 */
+.banner .bannerTop .logo .img {
+    float: left;
+    width: 66px;
+    height: 60px;
+    /* border: 1px solid #000; */
+    box-sizing: border-box;
+    margin: 14px 0px 27px 0px;
+    background-color: #1ABC9C;
+}
+.banner .bannerTop .logo .img img {
+    width: 40px;
+    height: 40px;
+    margin: 12px;
+}
+/* 标题 */
+.banner .bannerTop .logo .content {
+    position: relative;
+    width: 135px;
+    height: 60px;
+    float: right;
+    /* border: 1px solid #000; */
+    box-sizing: border-box;
+    margin: 14px 0px 27px 0px;
+ 
+}
+.banner .bannerTop .logo .content h1{
+    position: absolute;
+    top: -32px;
+    left: 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: #999999
+}
+.banner .bannerTop .logo .content span {
+    position: absolute;
+    font-size: 14px;
+    color: #BEBEBE;
+}
+/* 类别 */
+.banner .bannerTop .category {
+    position: relative;
+    width: 600px;
+    height: 63px;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    float: left;
+    margin: 14px 0px 27px 0px;
+}
+/* 清除浮动 */
+.banner .bannerTop .category::after {
+    display: block;
+    content: '';
+    visibility: hidden;
+    height: 0px;
+    clear: both;
+}
+
+.banner .bannerTop .category li a{
+    height: 63px;
+    float: left;
+    color: #666666;
+    margin-right: 24px;
+    /* border: 1px solid blue; */
+    box-sizing: border-box;
+    font-weight: bold;
+}
+/* 清除浮动 */
+.banner .bannerTop .category li a::after {
+    display: block;
+    content: '';
+    visibility: hidden;
+    height: 0px;
+    clear: both;
+}
+
+.banner .bannerTop .category li a:hover {
+    color: #1ABC9C;
+    border-bottom: 3px solid #1ABC9C;
+}
+
+/* 搜索 */
+.banner .bannerTop .sel {
+    width: 250px;
+    height: 100px;
+    float: left;
+    /* border: 1px solid #000; */
+    box-sizing: border-box;
+    position: relative;
+}
+.banner .bannerTop .sel input {
+    position: absolute;
+    width: 230px;
+    height: 30px;
+    border: 1px solid  #666666;
+    top: 50%;
+    margin-top: -8px;
+    border-radius: 10px;
+}
+.banner .bannerTop .sel span {
+    width: 20px;
+    height: 20px;
+    /* border: 1px solid #000; */
+    position: absolute;
+    top: 50%;
+    margin-top: -6px;
+    right: 30px;
+    color: #666666;
+}
+/* 购物车 */
+.banner .bannerTop .cart {
+    position: relative;
+    width: 136px;
+    height: 100%;
+    float: left;
+    /* border: 1px solid #000; */
+    box-sizing: border-box;
+    color: #666666;
+
+}
+.banner .bannerTop .cart img {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    color: #666666;
+    top: 50%;
+    margin-top: -4px;
+}
+.banner .bannerTop .cart span {
+    position: absolute;
+    left: 25px;
+    top: 7px;
+}
+/* footer top */
+.top {
+    width: 1400px;
+    height: 244px;
+    margin: 0 auto;
+    border-top: 1px solid #EDEDED;
+    margin-top: 50px;
+    color: #989898;
+    text-align: center;
+    /* position: relative;
+    left: 0px; */
+}
+.top .square {
+    width: 300px;
+    height: 100%;
+    border-right: 1px solid #EDEDED;
+    float: left;
+    box-sizing: border-box;
+}
+.top .square:last-child {
+    border-right: 0px solid #EDEDED;
+}
+/* 客户服务 */
+.top .square .title1 {
+    margin-top: 50px;
+}
+.top .square .title2 {
+    width: 100%;
+    height: 84px;
+    /* border-right: 1px solid #EDEDED; */
+    margin-top: 26px;
+}
+.top .square .title2 div {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #EDEDED;
+    float: left;
+    font-size: 12px;
+    text-align: center;
+    margin-left: 66px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+/* 关注我们 */
+.top .square .title2 div:last-child {
+    margin-left: 10px;
+}
+/* hover出现图片 */
+/* .top .square .title2 div:last-child img:nth-child(2):hover {
+    background-color: #1ABC9C;
+} */
+/* 下载APP */
+.top .square .title2 .download {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #EDEDED;
+    margin: -8px 0px 0px 25px;
+}
+.top .square .title2 .download img {
+    width: 80px;
+    height: 80px;
+    margin: 0px;
+}
+/* 扫描查看 */
+.top .square .title2 .scan {
+    display: block;
+    font-size: 12px;
+    margin: 12px 50px 15px 154px;
+    text-align: left;
+}
+.top .square .title2 button {
+    display: block;
+    width: 90px;
+    height: 30px;
+    font-size: 12px;
+    border: 1px solid #EDEDED;
+    background-color: #fff;
+    margin: -9px 0px 0px 154px;
+    color: #989898;
+}
+/* 服务热线 */
+.top .square .title2 .tel {
+    font-weight: bold;
+    font-size: 18px;
+    color: #696969;
+}
+.top .square .title2 .week,.money {
+    font-size: 14px;
+}
+/* 版权 */
+.bottom {
+    width: 1400px;
+    height: 300px;
+    background-color: #333333;
+    position: relative;
+    left: 0px;
+}
+.bottom .promise {
+    width: 100%;
+    height: 150px;
+    border-bottom: 1px solid #434343;
+    color: #fff;
+    font-size: 24px;
+}
+.bottom .promise .img1 {
+  position: relative;
+  left: 126px;
+  top: 16px;
+}
+.bottom .promise .img2 {
+    position: relative;
+    left: 420px;
+    top: 16px;
+}
+.bottom .promise .img3 {
+    position: relative;
+    left: 684px;
+    top: 16px;
+}
+.bottom .about {
+    color: #999;
+    font-size: 13px;
+    text-align: center;
+    padding: 30px 0px 0px 0px;
+}
+.bottom .about p:last-child {
+    margin-top: 25px;
+}
+/* 侧边栏 */
+aside {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    font-size: 12px;
+    color: #999;
+    padding: 10px;
+    box-sizing: border-box;
+    position: fixed;
+    right: 10px;
+    text-align: center;
+}
+aside .back {
+    bottom: 190px;
+}
+aside .APP {
+    bottom: 100px;
+}
+aside .service {
+    bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
