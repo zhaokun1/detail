@@ -230,6 +230,187 @@ header.nav .mask {
     left: 25px;
     top: 7px;
 }
+/* 详情*/
+.solo {
+    width: 1200px;
+    height: 500px;
+    border: 1px solid #000;
+    margin: 0 auto;
+    /* position: relative; */
+}
+/* 左边 */
+.solo .left {
+    width: 521px;
+    height: 100%;
+    border: 1px solid red;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    /* background-color: #E4E4E4; */
+}
+/* .solo .left .img {
+    display: none;
+} */
+/* 衣服样板 */
+.solo .left .cloths {
+    width: 430px;
+    height: 440px;
+    /* border: 1px solid #000000; */
+    background-color: #E4E4E4;  
+}
+.solo .left .cloths li{
+    position: absolute;
+    left: 0;
+    top: 0px;
+}
+.solo .left .cloths li img {
+    width: 100%;
+    height: 100%;
+}
+/* 切换 */
+.solo .left .imgs {
+    position: absolute;
+    right: 0;
+    float: right;
+    width: 80px;
+    height: 420px;
+    /* border: 1px solid #000; */
+    top: 0px;
+}
+.solo .left .imgs li{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    /* border: 1px solid #000; */
+    text-align: center;
+    line-height: 80px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    background-color: #E4E4E4;   
+}
+.solo .left .imgs li img {
+    width: 40px;
+    height: 40px;   
+    /* border: 1px solid #000; */
+    box-sizing: border-box;
+}
+.solo .left .imgs li:first-child {
+    top: 0;
+}
+.solo .left .imgs img:first-child {
+    top: 10px;
+}
+.solo .left .imgs li:nth-child(2) {
+    top: 90px;
+}
+.solo .left .imgs img:nth-child(2) {
+    top: 100px;
+}
+.solo .left .imgs li:nth-child(3) {
+    top: 180px;
+}
+.solo .left .imgs img:nth-child(3) {
+    top: 190px;
+}
+.solo .left .imgs li:nth-child(4) {
+    top: 270px;
+}
+.solo .left .imgs img:nth-child(4) {
+    top: 280px;
+}
+.solo .left .imgs li:nth-child(5) {
+    top: 360px;
+}
+.solo .left .imgs img:nth-child(5) {
+    top: 360px;
+}
+/* 销量收藏等 */
+.solo .left .contro {
+    width: 521px;
+    height: 130px;
+    /* border: 1px solid #000; */
+}
+/* 小标识 */
+.solo .left .contro .title1 {
+    width: 100%;
+    height: 24px;
+    /* border: 1px solid #000; */
+    margin-top: 30px;
+}
+.solo .left .contro .title1 .img {
+    display: block;
+    float: left;
+    width: 130px;
+    height: 24px;
+    /* border: 1px solid #000; */
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 24px;
+}
+/* 文字说明 */
+.solo .left .contro .title2 {
+    color: #999;
+    font-size: 12px;
+    width: 100%;
+    height: 24px;
+    /* border: 1px solid #000; */
+}
+.solo .left .contro .title2 .content1 {
+    display: block;
+    float: left;
+    width: 130px;
+    height: 24px;
+    /* border: 1px solid #000; */
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 24px;
+}
+/* 数字显示 */
+.solo .left .contro .title3 {
+    color: #666;
+    font-size: 14px;
+    width: 100%;
+    height: 24px;
+    /* border: 1px solid #000; */
+}
+.solo .left .contro .title3 .content2 {
+    display: block;
+    float: left;
+    width: 130px;
+    height: 24px;
+    /* border: 1px solid #000; */
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 24px;
+}
+/* 查看信息 */
+.solo .left .contro .title4 {
+    color: #666;
+    font-size: 14px;
+    width: 100%;
+    height: 24px;
+    /* border: 1px solid #000; */
+}
+.solo .left .contro .title4 .content3 {
+    display: block;
+    float: left;
+    width: 130px;
+    height: 24px;
+    /* border: 1px solid #000; */
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 24px;
+}
+
+/* 右边 */
+.solo .right {
+    width: 678px;
+    height: 100%;
+    border: 1px solid blue;
+    box-sizing: border-box;
+    float: right;
+}
+
 /* footer top */
 .top {
     width: 1400px;
