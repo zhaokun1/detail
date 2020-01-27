@@ -234,15 +234,17 @@ header.nav .mask {
 .solo {
     width: 1200px;
     height: 500px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     margin: 0 auto;
     /* position: relative; */
+    margin-top: 50px;
+    position: relative;
 }
 /* 左边 */
 .solo .left {
     width: 521px;
     height: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     box-sizing: border-box;
     float: left;
     position: relative;
@@ -406,11 +408,395 @@ header.nav .mask {
 .solo .right {
     width: 678px;
     height: 100%;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     box-sizing: border-box;
     float: right;
+    padding-left: 28px;
+}
+.solo .right .title1 {
+    width: 100%;
+    height: 90px;
+    /* border: 1px solid #000; */
+} 
+/* 第一行 */
+.solo .right .title1 .title1_1 {
+    width: 100%;
+    height: 38px;
+    /* border: 1px solid #000; */
+    font-size: 18px;
+    color: #666;
+    font-weight: bold;
+    line-height: 38px;
+}
+/* 秒杀价格 */
+.solo .right .title1 .title1_1 .msprice {
+    margin-left: 256px;
+    font-size: 27px;
+    color: #EA4C43;
+}
+.solo .right .title1 .title1_1 .msprice .money {
+    font-size: 14px;
+    font-weight: normal;
+}
+.solo .right .title1 .title1_1 .msprice .money1 {
+    margin-left: -10px;
+}
+/* 商品价格 */
+.solo .right .title1 .title1_1 .relprice {
+    margin-left: 43px;
+    font-size: 27px;
+}
+.solo .right .title1 .title1_1 .relprice .money {
+    font-size: 14px;
+    font-weight: normal;
+}
+.solo .right .title1 .title1_1 .relprice .line {
+    text-decoration: line-through;
+}
+.solo .right .title1 .title1_1 .relprice .line .money1 {
+    margin-left: -10px;
+}
+/* 第二行 */
+.solo .right .title1 .title1_2 {
+    width: 100%;
+    height: 53px;
+    /* border: 1px solid #000; */
+    font-size: 16px;
+    color: #999;
+    line-height: 38px;
+}
+/* 秒杀价格 */
+.solo .right .title1 .title1_2 .msprice {
+    margin-left: 317px;
+    font-size: 14px;
+}
+/* 商品价格 */
+.solo .right .title1 .title1_2 .relprice {
+    margin-left: 53px;
+    font-size:14px;
+}
+/* 第三行 大红条 秒杀时间倒计时 */
+.solo .right .title2 {
+    width: 100%;
+    height: 45px;
+    background-color: #E67857;
+    color: #fff;
+    font-size: 16px;
+    line-height: 45px;
+    padding: 0px 13px 13px 18px;
+    box-sizing: border-box;
+    margin-bottom: 13px;
+}
+.solo .right .title2 .time {
+    font-size: 20px;
+}
+.solo .right .title2 .more {
+    margin-left: 206px;
+}
+.solo .right .title2 .gt {
+    margin-left: -3px;
+    font-weight: bold;
+    font-size: 20px;
+}
+/* 第三行 领券 */
+.solo .right .title3 {
+    width: 100%;
+    height: 45px;
+    /* border: 1px solid #000; */
+    line-height: 45px;
+    padding: 0px 0px 13px 28px;
+    box-sizing: border-box;
+    color: #666;
+    font-size: 14px;
+}
+/* 领券 */
+.solo .right .title3 span:first-child {
+    margin-left: -290px;
+}
+.solo .right .title3 .title3_1 {
+    display: block;
+    float: left;
+    width: 87px;
+    height: 20px;
+    font-size: 12px;
+    color: #EB4D4C;
+    background-color: #FFCFD4;
+    line-height: 20px; 
+    position: relative;
+    left: 40px;
+    top: 13px;
+    margin-right: 10px;
+    border: 1px solid #F5A19F;
+    box-sizing: border-box;
+    text-align: center; 
+}
+.solo .right .title3 .img1 {
+    position: relative;
+    top: 6px;
+    left: 87px;
+}
+.solo .right .title3 .img2 {
+    position: relative;
+    top: 6px;
+    left: 166px;
 }
 
+.solo .right .title3 .img3 {
+    position: relative;
+    top: 6px;
+    left: 246px;
+}
+/* 立即领取 */
+.solo .right .title3 .title3_2 {
+    position: relative;
+    left: 300px;
+    color: #11BD95;
+    font-size: 12px;
+}
+/* 促销 */
+.solo .right .title4 {
+    width: 100%;
+    height: 45px;
+    /* border: 1px solid #000; */
+    line-height: 45px;
+    padding: 0px 0px 13px 28px;
+    box-sizing: border-box;
+    color: #666;
+    font-size: 14px;
+}
+.solo .right .title4 span:last-child {
+    font-size: 14px;
+    color: #EB4D4C;
+    position: relative;
+    left: 6px;
+}
+/* 奖励 */
+.solo .right .title5 {
+    width: 100%;
+    height: 45px;
+    /* border: 1px solid #000; */
+    line-height: 45px;
+    padding: 0px 0px 13px 28px;
+    box-sizing: border-box;
+    color: #666;
+    font-size: 14px;
+}
+.solo .right .title5 span:last-child {
+    font-size: 14px;
+    position: relative;
+    left: 6px;
+    color: #999;
+}
+/* 服务 */
+.solo .right .title6 {
+    width: 100%;
+    height: 45px;
+    /* border: 1px solid #000; */
+    line-height: 45px;
+    padding: 0px 0px 13px 28px;
+    box-sizing: border-box;
+    color: #666;
+    font-size: 14px;
+}
+.solo .right .title6 .img {
+    position: relative;
+    left: 4px;
+    top: 4px;
+}
+/* 了解详情 */
+.solo .right .title6 .detail {
+    position: relative;
+    left: 35px;
+    color: #11BD95;
+    font-size: 12px;
+}
+/* 颜色 */
+.solo .right .title7 {
+    width: 100%;
+    height: 95px;
+    /* border: 1px solid #000; */
+    line-height: 45px;
+    padding: 0px 0px 13px 28px;
+    box-sizing: border-box;
+    color: #666;
+    font-size: 14px;
+    padding: 24px 0px 20px 0px;
+    box-sizing: border-box;
+}
+.solo .right .title7 span:first-child {
+    position: relative;
+    left: -305px;
+}
+.solo .right .title7 .imgs {
+    float: left;
+    width: 332px;
+    height: 51px;
+    /* border: 1px solid #000; */
+    position: relative;
+    left: 65px;
+}
+.solo .right .title7 .imgs li {
+    float: left;
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    /* border: 1px solid #000; */
+    /* background-color: orange; */
+    background-color: #E4E4E4;
+}
+.solo .right .title7 .imgs li img {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+}
+.solo .right .title7 .imgs li:nth-child(1) {
+    top: 0px;
+    left: 0px;
+}
+.solo .right .title7 .imgs li:nth-child(2) {
+    top: 0px;
+    left: 70px;
+}
+.solo .right .title7 .imgs li:nth-child(3) {
+    top: 0px;
+    left: 140px;
+}
+.solo .right .title7 .imgs li:nth-child(4) {
+    top: 0px;
+    left: 210px;
+}
+.solo .right .title7 .imgs li:nth-child(5) {
+    top: 0px;
+    left: 280px;
+}
+
+/* 尺码 */
+.solo .right .title8 {
+    width: 100%;
+    height: 45px;
+    /* border: 1px solid #000; */
+    line-height: 45px;
+    padding: 0px 0px 13px 28px;
+    box-sizing: border-box;
+    color: #666;
+    font-size: 14px;
+    /* padding: 24px 0px 20px 0px; */
+    box-sizing: border-box;
+}
+.solo .right .title8 .mars {
+    width: 482px;
+    height: 31px;
+    /* border: 1px solid #000; */
+    position: relative;
+    top: -40px;
+    left: 35px;
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+}
+.solo .right .title8 .mars li {
+    width: 80px;
+    height: 31px;
+    line-height: 31px;
+    border: 1px solid #E4E4E4;
+    position: absolute;
+}
+.solo .right .title8 .mars li:nth-child(1) {
+    left: 0px;
+}
+.solo .right .title8 .mars li:nth-child(2) {
+    left: 100px;
+}
+.solo .right .title8 .mars li:nth-child(3) {
+    left: 200px;
+}
+.solo .right .title8 .mars li:nth-child(4) {
+    left: 300px;
+}
+.solo .right .title8 .mars li:nth-child(5) {
+    left: 400px;
+    background-color: #F2F2F2;
+}
+/* 数量 */
+.solo .right .title9 {
+    width: 100%;
+    height: 45px;
+    /* border: 1px solid #000; */
+    line-height: 45px;
+    padding: 0px 0px 13px 28px;
+    box-sizing: border-box;
+    color: #666;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+.solo .right .title9 .num {
+    width: 130px;
+    height: 30px;
+    border: 1px solid #E4E4E4;
+    position: relative;
+    top: -40px;
+    left: 35px;
+    text-align: center;
+    line-height: 30px;
+}
+.solo .right .title9 .num span {
+    display: block;
+    width: 37px;
+    height: 100%;
+    /* border: 1px solid #000; */
+    box-sizing: border-box;
+    float: left;
+    color: #D1D1D1;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+.solo .right .title9 .num span:nth-child(2) {
+    width: 56px;
+    color: #9A9A9A;
+    font-size: 16px;
+    font-weight: normal;
+    border-left: 1px solid #E4E4E4;
+    border-right: 1px solid #E4E4E4;
+}
+/* 加入购物车 立即购买 */
+.solo .right .title10 {
+    width: 100%;
+    height: 45px;
+    /* border: 1px solid #000; */
+    line-height: 45px;
+    padding: 0px 0px 13px 28px;
+    box-sizing: border-box;
+   
+    font-size: 14px;
+    box-sizing: border-box;
+}
+.solo .right .title10 .cart {
+    width: 150px;
+    height: 45px;
+    line-height: 45px;
+    /* border: 1px solid #000; */
+    margin-left: -95px;
+    color: #fff;
+    background-color: #EE4548;
+    border: 0px solid #000;
+}
+.solo .right .title10 .cart .img img{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 3px;
+}
+.solo .right .title10 .buy {
+    width: 150px;
+    height: 45px;
+    line-height: 45px;
+    /* border: 1px solid #000; */
+    margin-left: 20px;
+    color: #EE4548;
+    border: 1px solid red;
+    background-color: #fff;
+}
 /* footer top */
 .top {
     width: 1400px;
@@ -420,8 +806,8 @@ header.nav .mask {
     margin-top: 50px;
     color: #989898;
     text-align: center;
-    /* position: relative;
-    left: 0px; */
+    position: relative;
+    left: 0px;
 }
 .top .square {
     width: 300px;

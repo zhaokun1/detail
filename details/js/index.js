@@ -45,7 +45,7 @@ $imgs.mouseenter(function() {
     var idx = $(this).index();
     // 展示对应的图片
     $lis.eq(idx).show();
-    $lis.eq(idx).css('backgroundImage',$img);
+    // $lis.eq(idx).css('backgroundImage',$img);
     // 其他图片隐藏
     $lis.eq(idx).siblings().hide();
 })
