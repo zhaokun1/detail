@@ -34,19 +34,3 @@ function cycle() {
     $contro.animate({top: -50 *idx},1000); 
 }
 
-// 切换衣服图片
-// 获得元素对象
-var $lis = $('.solo .left .cloths li');
-var $imgs = $('.solo .left .imgs li');
-var $img = $('.solo .left .img');
-// console.log($lis, $imgs);
-$imgs.mouseenter(function() {
-    // 获得当前元素的索引
-    var idx = $(this).index();
-    // 展示对应的图片
-    $lis.eq(idx).show();
-    // $lis.eq(idx).css('backgroundImage',$img);
-    // 其他图片隐藏
-    $lis.eq(idx).siblings().hide();
-})
-
